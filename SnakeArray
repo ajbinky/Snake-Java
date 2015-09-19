@@ -1,0 +1,113 @@
+public class ArrayDemo {
+
+	 public static void main(String[] args) {
+	        // declares an array of integers
+	        int[] anArray;
+  
+	              
+	   
+	        
+	       
+	        
+	        // allocates memory for 11 hopefully points
+	        anArray = new int[11];
+
+	        int x;
+	        int y;
+	        
+	        x=0;
+	        y=0;
+	        
+	        // initialize first element
+	        anArray[0] = (1+x);
+	        // initialize second element
+	        anArray[1] = (1+y);
+	        // and so forth
+	        anArray[2] = (1+x);
+	        anArray[3] = (2+y);
+	        anArray[4] = (1+x);
+	        anArray[5] = (3+y);
+	        anArray[6] = (1+x);
+	        anArray[7] = (4+y);
+	        anArray[8] = (1+x);
+	        anArray[9] = (5+y);
+	       
+
+	        System.out.println("("
+	                           + anArray[0]+"," +anArray[1]+")");
+	        System.out.println("("
+                    + anArray[2]+"," +anArray[3]+")");
+	        System.out.println("("
+                    + anArray[4]+"," +anArray[5]+")");
+	        System.out.println("("
+                    + anArray[6]+"," +anArray[7]+")");
+	        System.out.println("("
+                    + anArray[8]+"," +anArray[9]+")");
+	 
+	        x=1;
+// x is value of time step when snake is moving right, dont' have a timestep method yet though
+	        
+	        // initialize first element
+	        anArray[0] = (1+x);
+	        // initialize second element
+	        anArray[1] = (1+y);
+	        // and so forth
+	        anArray[2] = (1+x);
+	        anArray[3] = (2+y);
+	        anArray[4] = (1+x);
+	        anArray[5] = (3+y);
+	        anArray[6] = (1+x);
+	        anArray[7] = (4+y);
+	        anArray[8] = (1+x);
+	        anArray[9] = (5+y);
+	       
+	        System.out.println("New snake cordinates ");
+	        System.out.println("("
+                    + anArray[0]+"," +anArray[1]+")");
+ System.out.println("("
+         + anArray[2]+"," +anArray[3]+")");
+ System.out.println("("
+         + anArray[4]+"," +anArray[5]+")");
+ System.out.println("("
+         + anArray[6]+"," +anArray[7]+")");
+ System.out.println("("
+         + anArray[8]+"," +anArray[9]+")");
+ 
+y=1;
+//should move snake in a y=timestep fashion when snake is moving up 
+ 
+ // initialize first element
+ anArray[0] = (1+x);
+ // initialize second element
+ anArray[1] = (1+y);
+ // and so forth
+ anArray[2] = (1+x);
+ anArray[3] = (2+y);
+ anArray[4] = (1+x);
+ anArray[5] = (3+y);
+ anArray[6] = (1+x);
+ anArray[7] = (4+y);
+ anArray[8] = (1+x);
+ anArray[9] = (5+y);
+
+ System.out.println("New snake cordinates ");
+ System.out.println("("
+         + anArray[0]+"," +anArray[1]+")");
+System.out.println("("
++ anArray[2]+"," +anArray[3]+")");
+System.out.println("("
++ anArray[4]+"," +anArray[5]+")");
+System.out.println("("
++ anArray[6]+"," +anArray[7]+")");
+System.out.println("("
++ anArray[8]+"," +anArray[9]+")");
+
+ 
+
+
+
+
+	 
+	 }      
+}
+	 
