@@ -1,0 +1,77 @@
+package snake_package;
+
+public class dot {
+	
+	private final int RAND_POS = 29;
+	private final int DOT_SIZE = 10;
+	private boolean overlap;
+	private int thenumberofApples;
+	public static int apple_eaten = 0;
+	public static int apple_x[];
+	public static int apple_y[];
+	
+	public dot(int givenNumber){
+		thenumberofApples = givenNumber;		
+	}
+	
+	public void initappeal(){
+		
+		for(int w=1; w<=thenumberofApples; w++){
+			
+			for(overlap=true; overlap==true;){
+		
+				int r = (int)(Math.random()*RAND_POS);
+				apple_x[w] = r*DOT_SIZE;
+			
+				r = (int)(Math.random()*RAND_POS);
+				apple_y[w] = r*DOT_SIZE;
+		
+				check();
+			}
+		}		
+	}
+	
+	private void check(){
+		
+		for(int w=1; w<=thenumberofApples; w++){
+			
+			for(int z=thelengthofSnake;z>0;z--){
+				
+				if((apple_x[w]==x[z])&&(apple_y[w]==x[z])){
+					overlap=true;
+					break;
+				}
+			}
+		}
+		
+		overlap=false;
+		
+	}
+	
+	public void eat(){
+		
+		for(int w=1; w<=thenumberofApples; w++){
+		
+			if((x[0]==apple_x[w])&&y[0]==apple_y[w]){
+				appeal(w);
+				thelengthofSnake++;
+				apple_eaten++;
+			
+			}
+		}
+	}
+	
+	public void appeal(int givenNumber){
+		
+		for(overlap=true; overlap==true;){
+			
+			int r = (int)(Math.random()*RAND_POS);
+			apple_x[givenNumber] = r*DOT_SIZE;
+		
+			r = (int)(Math.random()*RAND_POS);
+			apple_y[givenNumber] = r*DOT_SIZE;
+	
+			check();
+		}
+	}
+}
