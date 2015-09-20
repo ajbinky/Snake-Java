@@ -1,0 +1,56 @@
+private void initappeal(){
+		
+		for(overlap=true; overlap;){
+			
+			for(int w=1; w<=thenumberoffood; w++){
+		
+				int r = (int)(Math.random()*Limit);
+				food_x[w] = r*Dot_Size;
+			
+				r = (int)(Math.random()*Limit);
+				food_y[w] = r*Dot_Size;
+			}
+			
+			for(int w=1;w<thenumberoffood;w++){
+				check(w);
+			}
+		}
+	}
+	
+	private void check(int givenNumber) {
+
+		for (int z = thenumberoffood; z > 0; z--){
+			if ((food_x[givenNumber]==x[z])&&(food_y[givenNumber]==x[z])){
+				overlap = true;
+				appeal(givenNumber);
+			}
+		}
+		
+		overlap = false;
+	}
+	
+	private void appeal(int givenNumber){
+		
+		for(overlap=true; overlap;){
+			
+			int r = (int)(Math.random()*Limit);
+			food_x[givenNumber] = r*Dot_Size;
+		
+			r = (int)(Math.random()*Limit);
+			food_y[givenNumber] = r*Dot_Size;
+	
+			check(givenNumber);
+		}
+		
+	}
+	
+	private void eat(){
+		
+		for(int w=1; w<=thenumberoffood; w++){
+			if((x[0]==food_x[w])&&y[0]==food_y[w]){
+				appeal(w);
+				thesizeofsnake++;
+				food_eaten++;
+			}
+		}
+	}
