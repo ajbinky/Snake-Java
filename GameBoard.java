@@ -14,7 +14,7 @@ public class GameBoard extends JFrame {
 	//min value of 16 - idk max yet
 	private int boardMod = 47;
 	private int boardSize = pxlSize * boardMod;
-	private int sleepTime = 1000;
+	private int sleepTime = 100;
 	private int locx = 2;
 	private int locy = 2;
 	private boolean left;
